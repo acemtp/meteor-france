@@ -6,7 +6,7 @@ Router.configure({
 Router.map(function() {
 
   this.route('home', {
-    path: '/'
+    path: '/',
     template: 'home',
     data: function() {
       return {
