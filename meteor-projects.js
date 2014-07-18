@@ -22,17 +22,26 @@ if (Meteor.isServer) {
 
     Meteor.methods({
         like: function(id) {
-            if (Meteor.user()) {
-                var success = Projects.update({
-                    _id: id
-                }, {
-                    $inc: {
-                        likes: 1
-                    }
-                });
-
-                return success.error == null;
-            } else return 'Un vote suffit !';
+            var user = Meteor.user();
+            if (user) {
+                if (Votes.find({
+                    voted: user._id
+                }).count() == 0) {
+                    // var success = Projects.update({
+                    //     _id: id
+                    // }, {
+                    //     $inc: {
+                    //         likes: 1
+                    //     }
+                    // });
+                    console.log(user._id);
+                    return 1;
+                    // return success.error == null;
+                } else {
+                    return 'Un seul vote suffit !';
+                }
+            } else
+                return 'Vous ne pouvez pas voter car vous n\'êtes pas connecté';
         },
     });
 
@@ -47,15 +56,17 @@ if (Meteor.isClient) {
 
     Template.projectBoard.events({
         'click .like': function(e) {
-            if (res) {
-                if (typeof res == String)
-                    alertMessage('.alert-success', 'A voté !');
-                else
-                    alertMessage('.alert-warning', res);
-            } else
-                alertMessage('.alert-error', 'Une erreur est survenue, désolé !');
+            Meteor.call('like', function(err, res) {
+                if (res) {
+                    if (typeof res == String)
+                        alertMessage('.alert-success', 'A voté !');
+                    else
+                        alertMessage('.alert-warning', res);
+                } else
+                    alertMessage('.alert-error', 'Une erreur est survenue, désolé !');
+            });
         }
-    });
+    })
 }
 
 // Handlebars
