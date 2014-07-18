@@ -6,7 +6,7 @@ if (Meteor.isServer) {
 	Meteor.publish('allMeetups', function(){
 		return Meetups.find();
 	});
-	
+
 	function createMeetup(meetup){
 		Meetups.insert(meetup);
 	}
@@ -67,19 +67,18 @@ if(Meteor.isClient){
 	Session.set('selectedMeetup', null);
 	
 	Template.meetups.selectedMeetups = function(){
-		return Meetups.findOne();
+		return Meetups.find({},{limit:1});
 	}
 
 	Template.selectedMeetup.date = function(){
-		return "test";	
+		return moment(this.time);	
 	}
 
-	Template.meetups.passedMeetups = function(){
-		console.log(Meetups.find().count());
+	Template.timeline.passedMeetups = function(){
 		return Meetups.find({}, {limit:6});
 	}
 
-	Template.meetups.upcomingMeetups = function(){
+	Template.timeline.upcomingMeetups = function(){
 		return Meetups.find({}, {limit:1});
 	}
 
