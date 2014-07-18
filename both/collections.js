@@ -5,7 +5,7 @@
 
 Jobs = new Meteor.Collection('jobs');
 News = new Meteor.Collection('news');
-
+Suggestions = new Meteor.Collection('suggestions');
 
 /*****************************************************************************/
 /* Collections allow and deny */
@@ -17,3 +17,4 @@ News.allow({
     return true;
   }
 })
+
