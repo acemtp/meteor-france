@@ -7,7 +7,7 @@ if (Meteor.isClient) {
     'click input': function () {
       // template data, if any, is available in 'this'
       if (typeof console !== 'undefined')
-        console.log("You pressed the button");
+        console.log("Meteor france rocks");
     }
   });
 }
