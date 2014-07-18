@@ -22,6 +22,10 @@ Template.News.events({
     link = newsForm.find('.link').val();
 
     Meteor.call('insertNews', title, link, function(err, res) {
+      if (res['result'] === true) {
+        newsForm.find('input[type=text], textarea').val('');
+      }
+
       console.log(res['message']);
     });
 
@@ -32,6 +36,6 @@ Template.News.events({
 
 Template.News.helpers({
   news: function() {
-    return News.find();
+    return News.find({ }, { sort: { date: -1 } });
   }
 });
