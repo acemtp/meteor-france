@@ -1,8 +1,7 @@
+Projects = new Meteor.Collection('projects');
+
 // Server side
 if (Meteor.isServer) {
-
-    Projects = new Meteor.Collection('projects');
-
     // Collection schema : 
     // project : {
     // 		name: '',
