@@ -1,6 +1,11 @@
 // News >> Client
 
 
+Template.News.created = function() {
+  Meteor.subscribe('lastNews');
+};
+
+
 Template.News.events({
   'submit #newsAddResource': function(evt) {
     newsForm = $(evt.currentTarget);

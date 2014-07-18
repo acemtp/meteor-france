@@ -1,4 +1,4 @@
-<template name="meetup">
+<template name="meetups">
 
   <div class="meetups-template">
     <p class="template-h1">Meetups</p>
@@ -13,7 +13,6 @@
         <tr>
           <td class="meetup-1">
             <p>date here</p>
-
           </td>
           <td class="meetup-2">
             <div class="map">
@@ -29,62 +28,20 @@
 
 
     <div class="clear"></div>
-    <div class="timeline">
-      <div class="day">10<br/>jan.</div>
-      <div class="day">15<br/>feb.</div>
-      <div class="day">10<br/>mar.</div>
-      <div class="day-separator"><br/>now</div>
-      <div class="day">1<br/>aug.</div>
-    </div>
+    {{> timeline }}
 
     <div class="clear"></div>
-
-
-    <div class="suggestions">
-      <p class="template-h2">
-        Suggestions
-      </p>
-      <table>
-        <tr>
-          <td>+6</td>
-          <td>Scaling meteor</td>
-          <td>
-            <div class="speaker">1</div>
-            <div class="speaker">2</div>
-          </td>
-        </tr>
-
-        <tr>
-          <td>+2</td>
-          <td>Redis</td>
-          <td>
-            <div class="speaker">1</div>
-            <div class="speaker">2</div>
-          </td>
-        </tr>
-
-        <tr>
-          <td>+1</td>
-          <td>react integration</td>
-          <td>
-            <div class="speaker">1</div>
-            <div class="speaker">2</div>
-          </td>
-        </tr>
-
-        <tr>
-          <td></td>
-          <td>
-            <input class="topic" name="topic" placeholder="topic"/>
-            <button type="button">Ask for a talk</button>
-            <button type="button">give a talk</button>
-          </td>
-          <td></td>
-        </tr>
-      </table>
-    </div>
+    {{> suggestions }}
 
   </div>
   <div class="clear"></div>
 
+</template>
+
+<template name="selectedMeetup">
+	
+</template>
+
+<template name="meetup">
+	<div class="day">{{day}}<br/>{{month}}</div>
 </template>
