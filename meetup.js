@@ -61,14 +61,6 @@ if (Meteor.isServer) {
 if(Meteor.isClient){
 
 	Session.set('selectedMeetup', null);
-
-	Template.meetupDetails = function(){
-		
-	}
-
-	Template.meetupDetails = function(){
-
-	}
 	
 	Template.meetups.selectedMeetups = function(){
 		return Meetups.findOne();
