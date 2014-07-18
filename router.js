@@ -15,7 +15,7 @@ Router.map(function() {
     },
   });
 
-  this.route('news', {
+  this.route('News', {
     path: '/news'
   });
 });
