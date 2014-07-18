@@ -1,0 +1,27 @@
+<template name="News">
+
+  <div class="news-wrapper">
+    <div class="news-header">
+      <h1>Les Dernières Ressources Meteor en France</h1>
+      <a href="#">Ajouter un lien</a>
+    </div>
+
+    <div class="news-add-resource">
+      <h1>Ajouter une Resource</h1>
+      <form action="#" id="newsAddResource" method="post">
+        <input class="title" type="text" placeholder="Titre">
+        <input class="link" type="text" placeholder="Lien">
+        <input class="btn btn-submit" type="submit" value="Envoyer">
+      </form>
+    </div>
+
+    <div class="news-body">
+      {{#each news }}
+        <div class="item">
+          <a class="item-title" href="{{link}}">{{title}}</a>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+
+</template>
