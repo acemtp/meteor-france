@@ -28,62 +28,10 @@
 
 
     <div class="clear"></div>
-    <div class="timeline">
-			{{#each passedMeetups}}
-      	{{>meetup}}
-      {{/each}}
-      <div class="day-separator"><br/>now</div>
-      {{#each upcomingMeetups}}
-      	{{>meetup}}
-      {{/each}}
-    </div>
+    {{> timeline }}
 
     <div class="clear"></div>
-
-
-    <div class="suggestions">
-      <p class="template-h2">
-        Suggestions
-      </p>
-      <table>
-        <tr>
-          <td>+6</td>
-          <td>Scaling meteor</td>
-          <td>
-            <div class="speaker">1</div>
-            <div class="speaker">2</div>
-          </td>
-        </tr>
-
-        <tr>
-          <td>+2</td>
-          <td>Redis</td>
-          <td>
-            <div class="speaker">1</div>
-            <div class="speaker">2</div>
-          </td>
-        </tr>
-
-        <tr>
-          <td>+1</td>
-          <td>react integration</td>
-          <td>
-            <div class="speaker">1</div>
-            <div class="speaker">2</div>
-          </td>
-        </tr>
-
-        <tr>
-          <td></td>
-          <td>
-            <input class="topic" name="topic" placeholder="topic"/>
-            <button type="button">Ask for a talk</button>
-            <button type="button">give a talk</button>
-          </td>
-          <td></td>
-        </tr>
-      </table>
-    </div>
+    {{> suggestions }}
 
   </div>
   <div class="clear"></div>
