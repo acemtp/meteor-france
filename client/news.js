@@ -26,7 +26,7 @@ Template.News.events({
         newsForm.find('input[type=text], textarea').val('');
       }
 
-      console.log(res['message']);
+      $('.news-add-message').text(res['message']);
     });
 
     return false;
