@@ -11,6 +11,7 @@ if (Meteor.isServer) {
     //		likes: int,
     //		photos: 'photo.png'
     // }
+    console.log(Projects.find().fetch());
     if (Projects.find().count() == 0)
         Projects.insert({
             name: 'Meteor-France',
@@ -21,11 +22,22 @@ if (Meteor.isServer) {
             photos: ''
         });
 
+    Meteor.methods({
+        like: function(id) {
+            // Projects.update({
+            //     _id: id
+            // })
+        }
+    });
+
+    Meteor.publish('projects', function() {
+        return Projects.find();
+    });
 }
 
 // Client side
 if (Meteor.isClient) {
-
+    Meteor.subscribe('projects');
 }
 
 
