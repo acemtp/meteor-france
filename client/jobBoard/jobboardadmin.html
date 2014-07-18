@@ -1,3 +1,18 @@
 <template name="jobboardadmin">
-	Ici le job board admin
+
+	<form id="postJobForm" name="postJobForm">
+		<input type="text" id="title" placeholder="le titre">
+		<textarea id="description" cols="30" rows="10"></textarea>
+		<input type="text" id="contact" placeholder="contact">
+		<input type="submit" value="ok">
+	</form>
+
+	{{#each jobs}}
+		<article>
+			<header>{{title}}</header>
+			<p>{{text}}</p>
+			<footer>{{contact}}</footer>
+		</article>
+	{{/each}}
+
 </template>
