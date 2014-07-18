@@ -1,6 +1,6 @@
 if (Meteor.isServer) {
 
-  Projects.insert({url:"localhost:007"});
+  Projects.insert({url:"localhost:2999"});
 
   Meteor.methods({
     addCount: function (clientUrl) {
@@ -16,7 +16,7 @@ if (Meteor.isServer) {
 }
 
 if (Meteor.isClient) {
-  DDP.connect("http://localhost:3000/").call("addCount", "http://localhost:007/test", function(err, res){
-    console.log(err || res);
+  DDP.connect("http://localhost:3000/").call("addCount", "http://localhost:2999/test", function(err, res){
+    console.log("[count] test => ", err || res);
   });
 }
