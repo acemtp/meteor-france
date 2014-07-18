@@ -1,19 +1,20 @@
-if (Meteor.isClient) {
-  Template.hello.greeting = function () {
-    return "Welcome to meteor-france.";
-  };
+/*****************************************************************************/
+/* jobBoard: Event Handlers and Helpers */
+/*****************************************************************************/
+Template.jobBoard.events({
+});
 
-  Template.hello.events({
-    'click input': function () {
-      // template data, if any, is available in 'this'
-      if (typeof console !== 'undefined')
-        console.log("Meteor france rocks");
-    }
-  });
-}
+Template.jobBoard.helpers({
+});
 
-if (Meteor.isServer) {
-  Meteor.startup(function () {
-    // code to run on server at startup
-  });
-}
+/*****************************************************************************/
+/* jobBoard: Lifecycle Hooks */
+/*****************************************************************************/
+Template.jobBoard.created = function () {
+};
+
+Template.jobBoard.rendered = function () {
+};
+
+Template.jobBoard.destroyed = function () {
+};
