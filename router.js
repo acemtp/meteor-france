@@ -8,8 +8,12 @@ Router.map(function() {
     this.route('/', {
         path: '/',
         template: 'HomeLayout',
+        waitOn: function () {
+          return Meteor.subscribe('allMeetups');
+        },
         data: function() {
             return {
+                meetups: Meetups.find().fetch(),
                 projects: Projects.find().fetch()
             };
         },
