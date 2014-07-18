@@ -22,7 +22,10 @@ Router.map(function() {
     });
 
     // The job board admin page
-    this.route('jobboardadmin', {
+    this.route('JobBoard', {
+      path: '/jobboard'
+    });
+    this.route('JobBoardAdmin', {
       path: '/jbadmin'
     });
 

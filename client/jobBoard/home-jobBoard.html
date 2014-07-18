@@ -1,0 +1,16 @@
+<template name="JobBoardHome">
+	<section class="content" id="jobBoard">
+		<h1>Job board</h1>
+		<hr>
+		{{#each jobs}}
+			<article>
+				<header>{{title}}</header>
+				<p>{{text}}</p>
+				<footer>{{contact}}</footer>
+			</article>
+			<hr>
+		{{/each}}
+		<a href="{{pathFor 'JobBoard'}}">tous les jobs</a>
+		<hr><hr>
+	</section>
+</template>

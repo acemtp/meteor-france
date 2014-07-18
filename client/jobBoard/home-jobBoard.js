@@ -1,10 +1,10 @@
 /*****************************************************************************/
-/* JobBoard: Event Handlers and Helpers */
+/* JobBoardHome: Event Handlers and Helpers */
 /*****************************************************************************/
-Template.JobBoard.events({
+Template.JobBoardHome.events({
 });
 
-Template.JobBoard.helpers({
+Template.JobBoardHome.helpers({
 
 	jobs: function() {
 		return Jobs.find().fetch();
@@ -13,13 +13,13 @@ Template.JobBoard.helpers({
 });
 
 /*****************************************************************************/
-/* JobBoard: Lifecycle Hooks */
+/* JobBoardHome: Lifecycle Hooks */
 /*****************************************************************************/
-Template.JobBoard.created = function () {
+Template.JobBoardHome.created = function () {
 };
 
-Template.JobBoard.rendered = function () {
+Template.JobBoardHome.rendered = function () {
 };
 
-Template.JobBoard.destroyed = function () {
+Template.JobBoardHome.destroyed = function () {
 };
