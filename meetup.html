@@ -1,4 +1,4 @@
-<template name="meetup">
+<template name="meetups">
 
   <div class="meetups-template">
     <p class="template-h1">Meetups</p>
@@ -13,7 +13,6 @@
         <tr>
           <td class="meetup-1">
             <p>date here</p>
-
           </td>
           <td class="meetup-2">
             <div class="map">
@@ -30,11 +29,13 @@
 
     <div class="clear"></div>
     <div class="timeline">
-      <div class="day">10<br/>jan.</div>
-      <div class="day">15<br/>feb.</div>
-      <div class="day">10<br/>mar.</div>
+			{{#each passedMeetups}}
+      	{{>meetup}}
+      {{/each}}
       <div class="day-separator"><br/>now</div>
-      <div class="day">1<br/>aug.</div>
+      {{#each upcomingMeetups}}
+      	{{>meetup}}
+      {{/each}}
     </div>
 
     <div class="clear"></div>
@@ -87,4 +88,12 @@
   </div>
   <div class="clear"></div>
 
+</template>
+
+<template name="selectedMeetup">
+	
+</template>
+
+<template name="meetup">
+	<div class="day">{{day}}<br/>{{month}}</div>
 </template>

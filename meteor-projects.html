@@ -1,23 +1,26 @@
 <template name="projectBoard">
 	<div class="projects">
 		<h1>Here are the projects !!</h1>
-		{{#if projects}}
+		<!-- {{#if projects}} -->
 			{{#each projects}}
-				<a href="{{this.url}}">{{this.name}}</a>
+				<a href="{{this.url}}">{{this.name}}</a><br>
 				
-				Auteurs :{{#each authors}}
-					{{this}}
-				{{/each}}
-
-				<button class="like" data-like="{{this._id}}"><span class="fa fa-like"></span> +1</button>
+				
+				<p>Auteurs :
+					{{#each authors}}
+						{{this}} 
+					{{/each}}
+				</p><br>
+				
+				{{this.likes}} <button class="like" data-like="{{this._id}}"><span class="fa fa-like"></span> +1</button>
 			{{/each}}
-		{{else}}
-			<div class="spinner">
+		<!-- {{else}} -->
+			<!-- <div class="spinner">
 		      <div class="bounce1"></div>
 		      <div class="bounce2"></div>
 		      <div class="bounce3"></div>
-		    </div>
-		{{/if}}
+		    </div> -->
+		<!-- {{/if}} -->
 	</div>
 
 </template>
