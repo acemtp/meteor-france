@@ -6,7 +6,11 @@ Router.configure({
 Router.map(function() {
     this.route('/', {
         path: '/',
-        template: 'home'
+        template: 'home',
+        data: function() {
+            return {
+                projects: Projects.find().fetch()
+            };
+        },
     });
-
 });
