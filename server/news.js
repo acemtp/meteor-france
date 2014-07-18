@@ -1,4 +1,4 @@
 // News >> Server
-Meteor.publish('news', function () {
-	return Jobs.find();
+Meteor.publish('lastNews', function() {
+  return News.find();
 });
