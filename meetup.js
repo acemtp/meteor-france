@@ -7,6 +7,10 @@ if (Meteor.isServer) {
 		return Meetups.find();
 	});
 
+  Meteor.publish('suggestions', function(){
+    return Suggestions.find();
+  });
+	
 	function createMeetup(meetup){
 		Meetups.insert(meetup);
 	}
