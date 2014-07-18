@@ -3,6 +3,10 @@ Meetups = new Meteor.Collection("meetups");
 
 if (Meteor.isServer) {
 
+	Meteor.publish('allMeetups', function(){
+		return Meetups.find();
+	});
+	
 	function createMeetup(meetup){
 		Meetups.insert(meetup);
 	}
@@ -71,6 +75,7 @@ if(Meteor.isClient){
 	}
 
 	Template.meetups.passedMeetups = function(){
+		console.log(Meetups.find().count());
 		return Meetups.find({}, {limit:6});
 	}
 
