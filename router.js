@@ -29,7 +29,7 @@ Router.map(function() {
       path: '/jbadmin'
     });
 
-    this.route('count-test', {
+    this.route('CountTest', {
       path: '/count-test'
     });
 
