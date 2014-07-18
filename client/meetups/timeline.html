@@ -1,0 +1,13 @@
+<template name="timeline">
+
+  <div class="timeline">
+    {{#each passedMeetups}}
+    {{>meetup}}
+    {{/each}}
+    <div class="day-separator"><br/>now</div>
+    {{#each upcomingMeetups}}
+    {{>meetup}}
+    {{/each}}
+  </div>
+
+</template>
