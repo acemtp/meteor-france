@@ -9,7 +9,9 @@ Router.map(function() {
         path: '/',
         template: 'HomeLayout',
         waitOn: function () {
-          return Meteor.subscribe('allMeetups');
+          Meteor.subscribe('allMeetups');
+          Meteor.subscribe('suggestions');
+          return;
         },
         data: function() {
             return {
