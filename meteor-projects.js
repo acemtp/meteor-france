@@ -15,11 +15,12 @@ if (Meteor.isServer) {
         Projects.insert({
             name: 'Meteor-France',
             description: 'Site actuel',
-            url: 'http://france.meteor.com',
+            url: 'france.meteor.com',
             authors: ['Bob'],
             likes: 0,
             photos: ''
         });
+
 }
 
 // Client side

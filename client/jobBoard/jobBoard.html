@@ -1,0 +1,12 @@
+<template name="jobBoard">
+	<section class="content" id="jobBoard">
+		<h1>Job board</h1>
+		{{#each jobs}}
+			<article>
+				<header>{{title}}</header>
+				<p>{{text}}</p>
+				<footer>{{contact}}</footer>
+			</article>
+		{{/each}}
+	</section>
+</template>

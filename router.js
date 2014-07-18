@@ -1,16 +1,25 @@
 Router.configure({
-    layoutTemplate: 'home',
+    layoutTemplate: 'MainLayout',
     notFoundTemplate: 'error'
 });
 
 Router.map(function() {
+    // The home page
     this.route('/', {
         path: '/',
-        template: 'home',
+        template: 'HomeLayout',
         data: function() {
             return {
                 projects: Projects.find().fetch()
             };
         },
     });
+
+    // The job board admin page
+    this.route('jobboardadmin', {path: '/jbadmin'});
+
+    this.route('news', {
+        path: '/news'
+    });
+
 });

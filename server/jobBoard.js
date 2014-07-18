@@ -1,3 +1,13 @@
+/*****************************************************************************/
+/* Jobs collection functions */
+/*****************************************************************************/
+
+Meteor.publish('jobs', function () {
+  // you can remove this if you return a cursor
+  this.ready();
+});
+
+
 Jobs.allow({
 	insert: function (userId, doc) {
 		return true;
