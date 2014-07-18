@@ -9,21 +9,9 @@
       <div class="template-h2">
         <span>7th meteor meetup on paris</span>
       </div>
-      <table class="meetup">
-        <tr>
-          <td class="meetup-1">
-            <p>date here</p>
-          </td>
-          <td class="meetup-2">
-            <div class="map">
-              map here
-            </div>
-          </td>
-          <td class="meetup-3">
-            <p>speakers here</p>
-          </td>
-        </tr>
-      </table>
+      {{#each selectedMeetups}}
+      	{{>selectedMeetup}}
+      {{/each}}
     </div>
 
 
@@ -39,7 +27,21 @@
 </template>
 
 <template name="selectedMeetup">
-	
+	 <table class="meetup">
+        <tr>
+          <td class="meetup-1">
+            <p>{{date}}</p>
+          </td>
+          <td class="meetup-2">
+            <div class="map">
+              map here
+            </div>
+          </td>
+          <td class="meetup-3">
+            <p>speakers here</p>
+          </td>
+        </tr>
+      </table>
 </template>
 
 <template name="meetup">
