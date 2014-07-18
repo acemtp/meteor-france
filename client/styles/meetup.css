@@ -1,13 +1,19 @@
 .meetups-template {
     width: 800px;
-    height: 500px;
+    height: 600px;
     margin: 0;
     background-color: #E5E5E5;
     padding: 10px;
 }
 
-.meetups-template .template-title {
+.meetups-template .template-h1 {
     font-size: 30px;
+}
+
+.meetups-template .template-h2 {
+    font-size: 25px;
+    margin: 10px;
+    float: left;
 }
 
 /*blocks*/
@@ -22,7 +28,7 @@
 
 .meetups-template .meetup {
     padding: 10px;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     background-color: #F2F2F2;
 }
@@ -31,11 +37,6 @@
     width: 200px;
 }
 
-.meetups-template .meetup-title {
-    font-size: 25px;
-    margin: 10px;
-    float: left;
-}
 .meetups-template .map {
     background-color: #DDD;
     width: 150px;
@@ -46,8 +47,8 @@
 /*TIMELINE*/
 .meetups-template .timeline {
     text-align: center;
-    margin: 0 auto 0 150px;
-    width: 400px;
+    margin: 0 auto;
+    width: 700px;
 }
 
 .meetups-template .day {
@@ -55,10 +56,10 @@
     width: 55px;
     height: 55px;
     border-radius: 28px;
-    margin: 10px;
+    margin: 10px 5px;
     padding: 5px;
-    float: left;
     text-align: center;
+    display: inline-block;
 }
 
 .meetups-template .day:hover {
@@ -67,15 +68,40 @@
 }
 
 .meetups-template .day-separator {
-    float: left;
     margin: 10px;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    display: inline-block;
 }
 
 /*SUGGESTIONS*/
 .meetups-template .suggestions {
 }
 
+.meetups-template .suggestions table {
+    background-color: #F2F2F2;
+    width: 100%;
+}
 
+.meetups-template .suggestions table td {
+    padding: 0px 10px;
+}
+
+.meetups-template .speaker {
+    background-color: #FFF;
+    width: 40px;
+    height: 40px;
+    border-radius: 28px;
+    padding: 5px;
+    float: left;
+    text-align: center;
+    border: 2px solid #AAA;
+}
+
+.meetups-template .topic {
+
+}
 
 /*misc*/
 .clear {

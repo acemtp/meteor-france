@@ -1,12 +1,12 @@
 <template name="meetup">
 
   <div class="meetups-template">
-    <p class="template-title">Meetups</p>
+    <p class="template-h1">Meetups</p>
 
     <div class="clear"></div>
     <div class="list">
 
-      <div class="meetup-title">
+      <div class="template-h2">
         <span>7th meteor meetup on paris</span>
       </div>
       <table class="meetup">
@@ -38,10 +38,53 @@
     </div>
 
     <div class="clear"></div>
+
+
     <div class="suggestions">
-      <table></table>
+      <p class="template-h2">
+        Suggestions
+      </p>
+      <table>
+        <tr>
+          <td>+6</td>
+          <td>Scaling meteor</td>
+          <td>
+            <div class="speaker">1</div>
+            <div class="speaker">2</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>+2</td>
+          <td>Redis</td>
+          <td>
+            <div class="speaker">1</div>
+            <div class="speaker">2</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>+1</td>
+          <td>react integration</td>
+          <td>
+            <div class="speaker">1</div>
+            <div class="speaker">2</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td>
+            <input class="topic" name="topic" placeholder="topic"/>
+            <button type="button">Ask for a talk</button>
+            <button type="button">give a talk</button>
+          </td>
+          <td></td>
+        </tr>
+      </table>
     </div>
 
   </div>
+  <div class="clear"></div>
 
 </template>
