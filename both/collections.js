@@ -16,5 +16,11 @@ News.allow({
   insert: function (userId, doc) {
     return true;
   }
-})
+});
+
+Suggestions.allow({
+  insert: function (_, _) {
+    return true;
+  }
+});
 
