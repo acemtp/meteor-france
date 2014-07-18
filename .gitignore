@@ -1,1 +1,10 @@
 .idea
+*.scssc
+*.sublime-project
+*.sublime-workspace
+
+.sass-cache/*
+.DS_Store
+
+.meteor/local
+.meteor/meteorite
