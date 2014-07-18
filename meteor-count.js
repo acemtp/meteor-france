@@ -4,8 +4,8 @@ if (Meteor.isClient) {
 if (Meteor.isServer) {
   Meteor.startup(function () {
     Meteor.methods({
-	  addCount: function (projectID) {
-        console.log('on server, get time', this.connection.httpHeaders);
+	  addCount: function (clientUrl) {
+        console.log('on server, get time', clientUrl, this.connection.httpHeaders);
 		return new Date();
 	  }
     });
