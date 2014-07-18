@@ -17,7 +17,7 @@ Router.map(function() {
 
     // The job board admin page
     this.route('jobboardadmin', {
-      path: '/jbadmin'
+        path: '/jbadmin'
     });
 
     this.route('News', {

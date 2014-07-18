@@ -1,5 +1,3 @@
-Projects = new Meteor.Collection('projects');
-
 // Server side
 if (Meteor.isServer) {
     // Collection schema : 
@@ -11,7 +9,7 @@ if (Meteor.isServer) {
     //		likes: int,
     //		photos: 'photo.png'
     // }
-    console.log(Projects.find().fetch());
+
     if (Projects.find().count() == 0)
         Projects.insert({
             name: 'Meteor-France',
@@ -24,10 +22,18 @@ if (Meteor.isServer) {
 
     Meteor.methods({
         like: function(id) {
-            // Projects.update({
-            //     _id: id
-            // })
-        }
+            if (Meteor.user()) {
+                var success = Projects.update({
+                    _id: id
+                }, {
+                    $inc: {
+                        likes: 1
+                    }
+                });
+
+                return success.error == null;
+            } else return 'Un vote suffit !';
+        },
     });
 
     Meteor.publish('projects', function() {
@@ -38,7 +44,25 @@ if (Meteor.isServer) {
 // Client side
 if (Meteor.isClient) {
     Meteor.subscribe('projects');
+
+    Template.projectBoard.events({
+        'click .like': function(e) {
+            if (res) {
+                if (typeof res == String)
+                    alertMessage('.alert-success', 'A voté !');
+                else
+                    alertMessage('.alert-warning', res);
+            } else
+                alertMessage('.alert-error', 'Une erreur est survenue, désolé !');
+        }
+    });
 }
 
-
 // Handlebars
+alertMessage = function(type, log) {
+    $(type).empty();
+    $(type).append(log);
+    Meteor.setTimeout(function() {
+        $(type).empty();
+    }, 5000);
+};
