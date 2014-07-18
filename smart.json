@@ -1,6 +1,6 @@
 {
   "packages": {
-    "autoform": {},
-    "iron-router": {}
+  "autoform": {},
+  "iron-router": {}
   }
 }

@@ -8,5 +8,6 @@ autopublish
 insecure
 accounts-meetup
 accounts-ui
+iron-router
 autoform
 iron-router
