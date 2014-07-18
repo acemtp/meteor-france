@@ -1,20 +1,12 @@
 <template name="jobBoard">
 	<section class="content" id="jobBoard">
 		<h1>Job board</h1>
-		<article>
-			<header>nom de job</header>
-			<p>description</p>
-			<footer>contact</footer>
-		</article>
-		<article>
-			<header>nom de job</header>
-			<p>description</p>
-			<footer>contact</footer>
-		</article>
-		<article>
-			<header>nom de job</header>
-			<p>description</p>
-			<footer>contact</footer>
-		</article>
+		{{#each jobs}}
+			<article>
+				<header>{{title}}</header>
+				<p>{{text}}</p>
+				<footer>{{contact}}</footer>
+			</article>
+		{{/each}}
 	</section>
 </template>
