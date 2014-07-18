@@ -1,4 +1,13 @@
-// News >> Client
+// News >> Client > Helpers
+
+
+isValidLink = function(val) {
+  var reg = new RegExp(/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/);
+  return reg.test(val);
+}
+
+
+// News >> Client > Template Features
 
 
 Template.News.created = function() {
@@ -12,7 +21,10 @@ Template.News.events({
     title = newsForm.find('.title').val();
     link = newsForm.find('.link').val();
 
-    News.insert({ title: title, link: link, date: new Date() });
+    Meteor.call('insertNews', title, link, function(err, res) {
+      console.log(res['message']);
+    });
+
     return false;
   }
 });
