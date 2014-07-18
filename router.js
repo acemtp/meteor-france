@@ -4,7 +4,6 @@ Router.configure({
 });
 
 Router.map(function() {
-
     // The home page
     this.route('/', {
         path: '/',
@@ -18,5 +17,9 @@ Router.map(function() {
 
     // The job board admin page
     this.route('jobboardadmin', {path: '/jbadmin'});
+
+    this.route('news', {
+        path: '/news'
+    });
 
 });

@@ -1,0 +1,19 @@
+<template name="home">
+	<head>
+		<title>meteor-france</title>
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+		{{> mainNav}}
+		<div id="main">
+			{{> loginButtons}}
+			{{> meetup}}
+			{{> jobBoard}}
+			{{> projectBoard}}
+
+			{{> yield}}
+		</div>
+		{{> footer}}
+	</body>
+</template>
