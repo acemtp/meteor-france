@@ -41,4 +41,5 @@ Please, follow the [Meteor Style Guide](https://github.com/meteor/meteor/wiki/Me
 
 ## License
 
-TODO.
+This project is released under the [MIT license](http://en.wikipedia.org/wiki/MIT_License). 
+See [LICENSE](https://github.com/acemtp/meteor-france/blob/master/LICENSE).
