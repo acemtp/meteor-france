@@ -33,6 +33,10 @@ Router.map(function() {
       path: '/count'
     });
 
+    this.route('CountProject', {
+      path: '/count/project/:url'
+    });
+
     this.route('CountTest', {
       path: '/count/test'
     });

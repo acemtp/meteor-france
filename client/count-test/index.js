@@ -4,6 +4,12 @@ Template.CountMain.helpers({
 	}
 });
 
+Template.CountProject.helpers({
+	projects: function() {
+		var url = Router.current().params.url;
+		return Projects.find({url: url}).fetch();
+	}
+});
 
 Template.CountTest.rendered = function () {
   var url = window.location.href; //"http://localhost:2999/test"

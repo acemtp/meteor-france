@@ -3,8 +3,15 @@
     <p>Your projects</p>
     <ul>
       {{#each projects}}
-      <li>{{url}}</li>
+      <li><a href="/count/project/{{url}}">{{url}}</a></li>
       {{/each}}
     </ul>
   </div>
+</template>
+
+<template name="CountProject">
+  {{#each projects}}
+    <p>Project domain: {{url}}</p>
+    <p>Visits: {{visits}}</p>
+  {{/each}}
 </template>
