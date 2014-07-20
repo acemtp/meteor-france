@@ -66,7 +66,7 @@ Meteor.startup(function () {
         // Sticky Menu
         MenuSticky: function () {
             var menu = document.querySelector('#menu'),
-                origOffsetY = 70;//$('#menu').offset().top + 100;//menu.offsetTop + 100;
+                origOffsetY = 45;//$('#menu').offset().top + 100;//menu.offsetTop + 100;
             function scroll() {
                 if ($(window).scrollTop() >= origOffsetY) {
                     $('#menu').addClass('sticky');
