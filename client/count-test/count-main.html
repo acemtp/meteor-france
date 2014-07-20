@@ -1,0 +1,23 @@
+<template name="CountMain">
+  <a href="/">back to index...</a>
+  <div id="yourProjects">
+    <p>Your projects</p>
+    <ul>
+      {{#each projects}}
+      <li><a href="/count/project/{{url}}">{{url}}</a></li>
+      {{/each}}
+    </ul>
+  </div>
+</template>
+
+<template name="CountProject">
+  <a href="/count">back to projects...</a>
+  {{#each projects}}
+    <p>Project domain: {{url}}</p>
+    <p>Visits: {{visits}}</p>
+  {{/each}}
+  <div id="howToInstall">
+    <h2>How to install the counter/badge to your Meteor app?</h2>
+    <p>Simple, just run the following command in your project's directory: <code>mrt add madewith</code></p>  
+  </div>
+</template>

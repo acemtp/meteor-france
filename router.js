@@ -22,8 +22,23 @@ Router.map(function() {
     });
 
     // The job board admin page
-    this.route('jobboardadmin', {
-        path: '/jbadmin'
+    this.route('JobBoard', {
+      path: '/jobboard'
+    });
+    this.route('JobBoardAdmin', {
+      path: '/jbadmin'
+    });
+
+    this.route('CountMain', {
+      path: '/count'
+    });
+
+    this.route('CountProject', {
+      path: '/count/project/:url'
+    });
+
+    this.route('CountTest', {
+      path: '/count/test'
     });
 
     this.route('News', {

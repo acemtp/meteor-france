@@ -4,7 +4,8 @@
     "basePackages": {
       "autoform": {},
       "iron-router": {},
-      "font-awesome": {}
+      "font-awesome": {},
+      "madewith": {}
     },
     "packages": {
       "autoform": {
@@ -21,6 +22,11 @@
         "git": "https://github.com/nate-strauser/meteor-font-awesome.git",
         "tag": "v4.1.0",
         "commit": "ce6b1e92715d1938babc5d69c655c17e387f5926"
+      },
+      "madewith": {
+        "git": "https://github.com/adrienjoly/meteor-madewith.git",
+        "tag": "v0.0.2",
+        "commit": "38461ec1da5963388838fb4c3ec62c0a21183ce3"
       },
       "simple-schema": {
         "git": "https://github.com/aldeed/meteor-simple-schema.git",

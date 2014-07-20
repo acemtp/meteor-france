@@ -2,6 +2,7 @@
   "packages": {
     "autoform": {},
     "iron-router": {},
-    "font-awesome": {}
+    "font-awesome": {},
+    "madewith": {}
   }
 }
