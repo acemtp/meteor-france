@@ -1,13 +1,9 @@
 .meetups-template {
     width: 800px;
-    height: 600px;
+    height: 400px;
     margin: 0;
     /*background-color: #E5E5E5;*/
     padding: 10px;
-}
-
-.meetups-template .template-h1 {
-    font-size: 30px;
 }
 
 .meetups-template .template-h2 {

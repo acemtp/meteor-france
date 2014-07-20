@@ -184,7 +184,7 @@ input[type='submit']:active {
 .header-menu {
 	position: absolute;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 0 15px;
     z-index: 55;
 }
@@ -229,6 +229,7 @@ input[type='submit']:active {
 	width: 100%;
 	height: 100%;
 	content: "";
+    background-position-y: -140px;
     background-size: 100%;
 	background-image: url(/meetup.jpeg);
 	z-index: 40;
@@ -580,7 +581,7 @@ Accordion ==========*/
 /*--------------------
 Speaker's ==========*/
 .speaker {
-	max-width: 234px;
+	max-width: 150px;
     margin: 0 auto 20px;
     text-align: center;
 }
