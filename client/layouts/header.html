@@ -25,12 +25,18 @@
               <ul class="nav navbar-nav">
                 <li class="current"><a href="#header">Home</a></li>
                 <li><a href="#meetups">Meetups</a></li>
-                <li><a href="#subscribe">Subscribe</a></li>
-                <li><a href="#speakers">Speakers</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#partners">Partners</a></li>
-                <li><a href="#prices">Pricing Tables</a></li>
-                <li><a href="#register">Register</a></li>
+                <!--<li><a href="#subscribe">Subscribe</a></li>-->
+                <!--<li><a href="#speakers">Speakers</a></li>-->
+                <!--<li><a href="#faq">FAQ</a></li>-->
+                <!--<li><a href="#partners">Partners</a></li>-->
+                <!--<li><a href="#prices">Pricing Tables</a></li>-->
+                <!--<li><a href="#register">Register</a></li>-->
+
+                <li><a href="#meetups">meetups</a></li>
+                <li><a href="#jobBoard">job board</a></li>
+                <li><a href="/news">news</a></li>
+                <li><a href="/count">counter</a></li>
+                <li>{{> loginButtons}}</li>
               </ul>
 
             </div>
@@ -39,36 +45,6 @@
       </div>
     </div>
 
-    <!--== Site Description ==-->
-    <div class="header-cta">
-      <div class="container">
-        <div class="row">
-          <div class="blk">
-            <h1>Watch out !<br/>
-            The french meteor community is growing</h1>
-          </div>
-        </div>
-        <!--<div class="row">-->
-          <!--<div class="blk">-->
-            <!--<input type="submit" value="Register" name="submit" id="goregister">-->
-          <!--</div>-->
-        <!--</div>-->
-      </div>
-    </div>
-
-    <div class="header-bg">
-      <!--<div id="preloader">-->
-        <!--<div class="preloader"></div>-->
-      <!--</div>-->
-      <!--<div class="main-slider" id="main-slider">-->
-
-        <!--&lt;!&ndash;== Main Slider ==&ndash;&gt;-->
-        <!--<ul class="slides">-->
-          <!--<li><img src="images/demo/bg-slide-01.jpg" alt="Slide Image"/></li>-->
-          <!--<li><img src="images/demo/bg-slide-02.jpg" alt="Slide Image 2"/></li>-->
-        <!--</ul>-->
-
-      <!--</div>-->
-    </div>
+    {{> background}}
   </header>
 </template>

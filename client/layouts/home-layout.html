@@ -1,10 +1,22 @@
 <template name="HomeLayout">
-	{{> mainNav}}
-	<div id="main">
-		{{> loginButtons}}
-    {{> meetups}}
-		{{> JobBoardHome}}
-		{{> projectBoard}}
-	</div>
-	{{> footer}}
+
+  {{> meetups_section}}
+  {{> members_section}}
+  {{> coding_section}}
+
+  <section>
+    {{> JobBoardHome}}
+  </section>
+
+  <section>
+    {{> projectBoard}}
+  </section>
+
+  <!--{{> schedule_section}}-->
+  {{> video_section}}
+
+
+
+  <div id="gotop" class="gotop fa fa-arrow-up"></div>
+
 </template>
