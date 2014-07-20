@@ -1,11 +1,19 @@
+<!--<template name="MainLayout">-->
+
+  <!--<div class="container">-->
+    <!--<div class="row">-->
+      <!--<div class="col-xs-12">-->
+        <!--{{> yield}}-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+
+<!--</template>-->
+
 <template name="MainLayout">
 
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        {{> yield}}
-      </div>
-    </div>
-  </div>
+  {{> header}}
+  {{> content}}
+  {{> app_footer}}
 
 </template>

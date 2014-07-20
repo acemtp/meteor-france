@@ -1,0 +1,190 @@
+<template name="content">
+  <div class="content">
+    <div class="container box">
+
+      {{> meetups_section}}
+      {{> members_section}}
+      {{> coding_section}}
+      {{> schedule_section}}
+      {{> video_section}}
+
+      <section id="image-slider" class="row">
+        <div class="col-sm-12">
+          <div class="section-header text-right">
+            <h2>Photos</h2>
+            <h4>Awesome section description goes here.</h4>
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-12">
+          <h3>Lorem ipsum</h3>
+          <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, quos, ratione, optio, blanditiis
+            deserunt saepe iure sunt odit atque eius voluptatum labore excepturi explicabo aliquid sapiente porro
+            voluptas commodi sint?</h4>
+          <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, quas, quibusdam, impedit ducimus
+            nisi fugiat veritatis cupiditate commodi
+          </blockquote>
+        </div>
+        <div class="col-md-7 col-sm-12">
+          <div class="flexslider">
+            <ul class="slides">
+              <li><img src="images/demo/slide-01.jpg" alt="Slide Image"/></li>
+              <li><img src="images/demo/slide-02.jpg" alt="Slide Image 2"/></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!--==========-->
+
+
+
+
+
+
+
+
+      <!--===============================-->
+      <!--== FAQ ========================-->
+      <!--===============================-->
+      <section id="faq" class="row">
+        <div class="col-sm-12">
+          <div class="section-header text-right">
+            <h2>F.A.Q</h2>
+            <h4>Awesome section description goes here.</h4>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <ul class="accordion-group">
+            <li class="accordion">
+              <a class="accordion-heading">
+                <h4 class="accordion-title">Lorem ipsum dolor sit amet ?</h4>
+                <span class="fa fa-plus-circle pull-right"></span>
+              </a>
+
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ratione nostrum atque nobis debitis
+                doloremque. Fugit, officia laudantium repellat assumenda eligendi vel sed dolore delectus. Vitae sequi
+                cum doloribus veniam.
+              </div>
+            </li>
+            <li class="accordion">
+              <a class="accordion-heading">
+                <h4 class="accordion-title">Lorem ipsum dolor sit amet ?</h4>
+                <span class="fa fa-plus-circle pull-right"></span>
+              </a>
+
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ratione nostrum atque nobis debitis
+                doloremque. Fugit, officia laudantium repellat assumenda eligendi vel sed dolore delectus. Vitae sequi
+                cum doloribus veniam.
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <ul class="accordion-group">
+            <li class="accordion">
+              <a class="accordion-heading">
+                <h4 class="accordion-title">Lorem ipsum dolor sit amet ?</h4>
+                <span class="fa fa-plus-circle pull-right"></span>
+              </a>
+
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ratione nostrum atque nobis debitis
+                doloremque. Fugit, officia laudantium repellat assumenda eligendi vel sed dolore delectus. Vitae sequi
+                cum doloribus veniam.
+              </div>
+            </li>
+            <li class="accordion">
+              <a class="accordion-heading">
+                <h4 class="accordion-title">Lorem ipsum dolor sit amet ?</h4>
+                <span class="fa fa-plus-circle pull-right"></span>
+              </a>
+
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ratione nostrum atque nobis debitis
+                doloremque. Fugit, officia laudantium repellat assumenda eligendi vel sed dolore delectus. Vitae sequi
+                cum doloribus veniam.
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--==========-->
+
+
+      <!--===============================-->
+      <!--== Carousel ===================-->
+      <!--===============================-->
+      <section id="partners" class="row">
+        <div class="col-sm-12">
+          <div class="section-header text-center">
+            <h2>Partners</h2>
+            <h4>Awesome section description goes here.</h4>
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <div id="carousel" class="owl-carousel">
+            <div class="item"><img src="images/demo/partners/logo-01.png" alt="Logo 1"></div>
+            <div class="item"><img src="images/demo/partners/logo-02.png" alt="Logo 2"></div>
+            <div class="item"><img src="images/demo/partners/logo-03.png" alt="Logo 3"></div>
+            <div class="item"><img src="images/demo/partners/logo-04.png" alt="Logo 4"></div>
+            <div class="item"><img src="images/demo/partners/logo-05.png" alt="Logo 5"></div>
+            <div class="item"><img src="images/demo/partners/logo-06.png" alt="Logo 6"></div>
+          </div>
+          <div class="owl-carousel-navigation">
+            <a class="owl-btn prev fa fa-angle-left"></a>
+            <a class="owl-btn next fa fa-angle-right"></a>
+          </div>
+        </div>
+      </section>
+      <!--==========-->
+
+
+
+
+
+      <!--===============================-->
+      <!--== Register ===================-->
+      <!--===============================-->
+      <section id="register" class="row">
+        <div class="col-sm-12">
+          <div class="section-header text-center">
+            <h2>Register</h2>
+            <h4>Awesome section description goes here.</h4>
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <form id="register-form" method="post" class="form">
+            <div class="col-md-2 col-sm-6">
+              <input name="name" id="name" type="text" placeholder="Name" required>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <input name="email" id="email" type="email" placeholder="Email" required>
+            </div>
+            <div class="col-md-2 col-sm-6">
+              <input name="telephone" id="telephone" type="tel" placeholder="Telephone">
+            </div>
+            <div class="col-md-2 col-sm-6">
+              <select name="ticket" id="ticket">
+                <option value="Silver">Silver</option>
+                <option value="Gold">Gold</option>
+                <option value="Platinum">Platinum</option>
+              </select>
+            </div>
+            <div class="col-md-3 col-sm-12">
+              <input type="submit" value="Register" name="submit">
+            </div>
+            <p class="form-notification" style="display: none;">Registration Complete</p>
+          </form>
+        </div>
+      </section>
+      <!--==========-->
+
+      <section>
+        {{> yield}}
+      </section>
+
+      <div id="gotop" class="gotop fa fa-arrow-up"></div>
+    </div>
+  </div>
+</template>
