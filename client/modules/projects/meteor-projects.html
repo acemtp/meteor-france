@@ -1,0 +1,41 @@
+<template name="projectBoard">
+  <section class="row separated">
+    <div class="col-sm-12">
+      <div class="section-header text-left">
+        <h2>Meteor Projects</h2>
+      </div>
+    </div>
+    <div class="projects col-sm-12">
+      {{#if projects}}
+      {{#each projects}}
+      <a href="{{this.url}}">{{this.name}}</a><br>
+
+
+      <p>Auteurs :
+        {{#each authors}}
+        {{this}}
+        {{/each}}
+      </p><br>
+
+      {{this.likes}}
+      <button class="like" data-like="{{this._id}}"><span class="fa fa-like"></span> +1</button>
+      <br>
+
+      <div class="alert">
+        <p class="alert-success"></p>
+
+        <p class="alert-warning"></p>
+
+        <p class="alert-error"></p>
+      </div>
+      {{/each}}
+      {{else}}
+      <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+      </div>
+      {{/if}}
+    </div>
+  </section>
+</template>

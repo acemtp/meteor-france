@@ -192,15 +192,15 @@ input[type='submit']:active {
 .header-menu.sticky {
 	position: fixed;
 	margin: 0;
-	-moz-animation: bounceInDown 0.5s;
-	-webkit-animation: bounceInDown 0.5s;
-	animation: bounceInDown 0.5s;
+	/*-moz-animation: bounceInDown 0.5s;*/
+	/*-webkit-animation: bounceInDown 0.5s;*/
+	/*animation: bounceInDown 0.5s;*/
 }
 
 .header-menu.fixed {
-	-moz-animation: bounceIn 0.5s;
-	-webkit-animation: bounceIn 0.5s;
-	animation: bounceIn 0.5s;
+	/*-moz-animation: bounceIn 0.5s;*/
+	/*-webkit-animation: bounceIn 0.5s;*/
+	/*animation: bounceIn 0.5s;*/
 }
 
 .header-menu > .box {

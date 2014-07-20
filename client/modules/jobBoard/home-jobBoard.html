@@ -1,16 +1,20 @@
 <template name="JobBoardHome">
-	<section class="content" id="jobBoard">
-		<h1>Job board</h1>
-		<hr>
-		{{#each jobs}}
-			<article>
-				<header>{{title}}</header>
-				<p>{{text}}</p>
-				<footer>{{contact}}</footer>
-			</article>
-			<hr>
-		{{/each}}
-		<a href="{{pathFor 'JobBoard'}}">tous les jobs</a>
-		<hr><hr>
-	</section>
+  <section class="row separated" id="jobBoard">
+    <div class="col-sm-12">
+      <div class="section-header text-left">
+        <h2>Job board</h2>
+      </div>
+    </div>
+    <div class="col-sm-12">
+      {{#each jobs}}
+      <article>
+        <header>{{title}}</header>
+        <p>{{text}}</p>
+        <footer>{{contact}}</footer>
+      </article>
+      <hr>
+      {{/each}}
+      <a href="{{pathFor 'JobBoard'}}">tous les jobs</a>
+    </div>
+  </section>
 </template>

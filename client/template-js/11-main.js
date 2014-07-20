@@ -1,4 +1,7 @@
-(function ($) {
+Meteor.startup(function () {
+    // my code here
+
+
     "use strict";
 
     ///////////////////////////////////////////////////// Your
@@ -10,10 +13,10 @@
         // Launch Functions
         Launch: function () {
             //fn.GoogleMaps();
-            //fn.MenuSticky();
+            fn.MenuSticky();
             fn.MainSlider();
             fn.MainSliderAlign();
-            fn.Navigation();
+            //fn.Navigation();
             fn.Carousel();
             fn.Slider();
             fn.RegisterForm();
@@ -63,7 +66,7 @@
         // Sticky Menu
         MenuSticky: function () {
             var menu = document.querySelector('#menu'),
-                origOffsetY = $('#menu').offset().top + 100;//menu.offsetTop + 100;
+                origOffsetY = 70;//$('#menu').offset().top + 100;//menu.offsetTop + 100;
             function scroll() {
                 if ($(window).scrollTop() >= origOffsetY) {
                     $('#menu').addClass('sticky');
@@ -263,4 +266,4 @@
         fn.Launch();
     });
 
-})(jQuery);
+});
