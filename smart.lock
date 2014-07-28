@@ -10,8 +10,8 @@
     "packages": {
       "autoform": {
         "git": "https://github.com/aldeed/meteor-autoform.git",
-        "tag": "v0.15.1",
-        "commit": "723aed684ef9d16e94424cde6389b8e4a03d546e"
+        "tag": "v0.16.1",
+        "commit": "34a447fd3a1b3164c78f865aabbac3ddc2d033fb"
       },
       "iron-router": {
         "git": "https://github.com/EventedMind/iron-router.git",
@@ -25,8 +25,8 @@
       },
       "madewith": {
         "git": "https://github.com/adrienjoly/meteor-madewith.git",
-        "tag": "v0.0.2",
-        "commit": "38461ec1da5963388838fb4c3ec62c0a21183ce3"
+        "tag": "v0.0.3",
+        "commit": "4d8f26210536536ed4946b0ca4c37bd831dc5f8c"
       },
       "simple-schema": {
         "git": "https://github.com/aldeed/meteor-simple-schema.git",
@@ -35,8 +35,8 @@
       },
       "collection2": {
         "git": "https://github.com/aldeed/meteor-collection2.git",
-        "tag": "v0.4.2",
-        "commit": "4ff4b707bec8be434919730bf101325adb215444"
+        "tag": "v0.4.3",
+        "commit": "cb470de2cfeebeccbf76d4cc0a39ad4afc76d553"
       },
       "moment": {
         "git": "https://github.com/acreeger/meteor-moment.git",
